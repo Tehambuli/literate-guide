@@ -1,0 +1,245 @@
+body {
+    background-color: #0191B4;
+    color: white;
+    display: inline;
+}
+
+.intro {
+    text-align: left;
+    font-size: larger;
+    margin-left: 55px;
+}
+
+.top-nav{
+    padding: auto;
+    margin: 10px;
+}
+
+.top-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to right, #0191b4, #35BBCA, #35BBCA, #D3DD18);
+    font-size: 20px;
+}
+
+.top-nav li {
+    float: left;
+}
+
+.top-nav li a {
+    display: block;
+    padding: 8px;
+    color: white;
+    
+  }
+
+
+.header {
+    text-align: center;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    font-weight: bold;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+}
+
+h3 {
+    margin-bottom: 0;
+}
+
+
+
+.right-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
+}
+
+.container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.inner {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.hello {
+    text-align: center;
+}
+
+.flex-container {
+    display: flex;
+    background-color: Black;
+    font-size: 20px;
+    text-align: center;
+    line-height: 2.0;
+    border-radius: 8px;
+}
+
+.grid-container{
+    font-size: larger;
+}
+
+.middle{
+    background-color: #0191B4;
+    margin: 30px;
+    padding: 100px;
+    padding-bottom: 0;
+  
+}
+
+.skill{
+    text-align: center;
+    background: linear-gradient(to right, #0191b4, #35BBCA, #35BBCA, #D3DD18);
+    margin-top: -125px;
+    font-size: larger;
+
+}
+
+
+.grid-item a {
+    display: inline-block;
+    position: relative;
+}
+
+.project-details {
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    padding: 15px;
+    background: #00000077;
+    color: white;
+    bottom: 0;
+    left: 0;
+    transition: opacity .3s;
+}
+
+.grid-item a:hover .project-details {
+    opacity: 1;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.img {
+    background-color: #0191B4;
+    margin: 10px;
+    font-size: 20px;
+    text-align: justify;
+    line-height: 1.6;
+    width: 366px;
+    height: 400px;
+}
+
+.p1 {
+    font-size: 5px;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.projects {
+
+    margin-top: 100px;
+    text-align: center;
+    font-size: 25px;
+    background: linear-gradient(to left, #0191b4, #35BBCA, #35BBCA, #D3DD18);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    columns: 10px;
+    row-gap: 10px;
+    background-color: black;
+    padding: 10px;
+    border-radius: 8px;
+
+}
+.grid-item {
+    background-color: black;
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+}
+
+.grid-item img {
+    width: 300px;
+    height: 187.5px;
+}
+
+.grid-image {
+    display: block;
+    width: 300px;
+    height: 187.5px;
+    background-size: 300px 187.5px;
+}
+
+.sun-and-ski {
+    background-image: url("img/Houston Sun and Ski.png");
+}
+
+.freelance {
+    margin-top: 150px;
+    font-size: 25px;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+ 
+}
+
+.extra {
+    text-align: center;
+    padding-top: 10px;
+    color: white;
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+#nav {
+    padding: 30px 20px 20px 20px;
+}
+
+.info{/* text-align: right; */margin-top: 150px;font-size: 25px;}
+
+.footer{
+    text-align: center;
+    margin-right: 15px;
+    margin-top: auto;
+    scroll-padding-bottom: 75px;
+    font-family: 'Courier New', Courier, monospace;
+    background: linear-gradient(to left, #41585d, #ffff00, #35BBCA, #41585d);
+    color: #000;
+   
+
+}
+
+@media only screen and (max-width: 800px) {
+
+    .flex-container{
+        height: 500px;
+    }
+
+    .img{
+        width: 150px;
+        height: 162px;
+    }
+
+    .grid-container {
+        grid-template-columns: auto;
+    }
+}
